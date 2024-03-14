@@ -81,8 +81,7 @@ Next, let’s schedule a task with a delay (in milliseconds):
 public void scheduleFixedRateWithInitialDelayTask() {
  
     long now = System.currentTimeMillis() / 1000;
-    System.out.println(
-      "Fixed rate task with one second initial delay - " + now);
+    log.info("Fixed rate task with one second initial delay - " + now);
 }
 ```
 
@@ -99,8 +98,7 @@ Sometimes delays and rates are not enough, and we need the flexibility of a cron
 public void scheduleTaskUsingCronExpression() {
  
     long now = System.currentTimeMillis() / 1000;
-    System.out.println(
-      "schedule tasks using cron jobs - " + now);
+    log.info("schedule tasks using cron jobs - " + now);
 }
 ```
 
